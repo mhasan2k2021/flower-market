@@ -45,8 +45,38 @@ ul li a {
 .cart a span {
   color: black;
 }
+/* this is banner section */
 
-@media screen and (max-width: 480px) {
+.banner {
+  width: 100%;
+  height: 500px;
+  padding: 0 100px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner .flex_item {
+  flex: 1 1 50%;
+}
+
+.banner h1 {
+  font-size: 65px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner .title_paragraph h1 span {
+  color: #e95a08;
+}
+
+.banner .title_paragraph p {
+  font-size: 22x;
+  color: rgba(0, 0, 0, 0.527);
+}
+
+/ */ @media screen and (max-width: 480px) {
   nav {
     padding: 0 50px;
   }
@@ -55,5 +85,29 @@ ul li a {
   }
   ul .nav_link {
     display: none;
+  }
+
+  /* this banner responsive section */
+
+  .banner {
+    flex-direction: column-reverse;
+    margin-top: 0px;
+    padding: 0;
+  }
+  .flex_item {
+    flex: 1 1 100%;
+  }
+  .banner img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .banner .title_paragraph {
+    padding: 0 20px;
+  }
+  .banner .title_paragraph p {
+    font-size: 14px;
+  }
+  .banner h1 {
+    font-size: 28px;
   }
 }
