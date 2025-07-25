@@ -82,7 +82,7 @@ ul li a {
   width: 100%;
   min-height: 600px;
   padding: 0 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .our_shop .title_para {
   width: 100%;
@@ -149,7 +149,15 @@ ul li a {
 /* this flower lover section */
 
 .flower_lover {
+  margin-top: 50px;
   padding: 50px;
+  position: relative;
+}
+.trusted {
+  width: 280px;
+  position: absolute;
+  top: -50px;
+  left: 450px;
 }
 
 .lover_flex {
@@ -383,5 +391,8 @@ footer {
   }
   .social_icon {
     justify-content: start;
+  }
+  .trusted {
+    display: none;
   }
 }
