@@ -191,6 +191,130 @@ ul li a {
   list-style: disc;
 }
 
+/* this is for last deals */
+
+.deals {
+  max-width: 100%;
+  min-height: 400px;
+}
+
+.deals_title_para {
+  text-align: center;
+}
+.deals_title_para h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.deals_title_para h2 span {
+  color: #e95a08;
+}
+
+.deals_title_para p {
+  font-size: 22px;
+  color: #0000005e;
+  text-align: center;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.deals_grid {
+  width: 100%;
+  height: 500px;
+  padding: 50px;
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "first  third  third"
+    "second third third";
+  gap: 10px;
+}
+.deals_grid .img1,
+.img2,
+.img3 {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img1 {
+  background-image: url("https://res.cloudinary.com/dcmgay3nl/image/upload/v1753286092/flower-lover/deal-bloom_yciblp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: red;
+  grid-area: first;
+}
+.img1 span {
+  width: 100%;
+  height: 100%;
+}
+.img2 {
+  background-image: url("https://res.cloudinary.com/dcmgay3nl/image/upload/v1753286092/flower-lover/deal-ana_oktet3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: yellow;
+  grid-area: second;
+}
+.img3 {
+  background-image: url("https://res.cloudinary.com/dcmgay3nl/image/upload/v1753286094/flower-lover/deal-zabo_psgvev.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-area: third;
+}
+
+.img1 .title p {
+  width: 300px;
+  color: white;
+}
+.img2 .title p {
+  width: 300px;
+  color: white;
+}
+.img3 .title p {
+  width: 500px;
+  color: white;
+  font-size: 40px;
+}
+.img1 .title button {
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid wheat;
+  background: none;
+  color: white;
+}
+.img2 .title button {
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid wheat;
+  background: none;
+  color: white;
+}
+.img3 .title button {
+  width: 140px;
+  height: 50px;
+  font-size: 28px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid wheat;
+  background: none;
+  color: white;
+}
+.img2 .title p {
+  width: 300px;
+  color: white;
+}
+
 /* this is join us section */
 
 .join_us {
@@ -394,5 +518,39 @@ footer {
   }
   .trusted {
     display: none;
+  }
+
+  .deals_grid {
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "first  "
+      "second"
+      "third";
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .deals_title_para h3 {
+    font-size: 50px;
+  }
+  .deals_title_para p {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .img3 .title p {
+    width: 300px;
+    color: white;
+    font-size: 22px;
+  }
+
+  .img3 .title button {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid wheat;
+    background: none;
+    color: white;
   }
 }
